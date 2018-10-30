@@ -3,7 +3,7 @@ FROM alpine:edge
 MAINTAINER xujinkai <jack777@xujinkai.net>
 
 RUN apk update && \
-	apk add --no-cache --update bash && \
+	apk add --no-cache --update bash wget && \
 	mkdir -p /conf && \
 	mkdir -p /conf-copy && \
 	mkdir -p /data && \
